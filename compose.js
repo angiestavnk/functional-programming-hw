@@ -10,8 +10,8 @@ const multiplyByTwo = (x) => {
 const addTwo = (x) => {
   return x.map((el) => el + 2);
 };
-const deleteEven = (x) => {
+const deleteOdd = (x) => {
   return x.filter((el) => el % 2 === 0);
 };
 
-console.log(compose([1, 2, 4, 5], multiplyByTwo, addTwo, deleteEven));
+console.log(compose([1, 2, 4, 5], multiplyByTwo, addTwo, deleteOdd));
